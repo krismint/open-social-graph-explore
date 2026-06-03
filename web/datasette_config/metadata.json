@@ -1,0 +1,25 @@
+{
+  "title": "Open Social Graph Explorer",
+  "description": "Local-first public account interaction graph database.",
+  "databases": {
+    "social_graph": {
+      "tables": {
+        "accounts": {
+          "description": "Account nodes. These are platform accounts, not real-world people."
+        },
+        "interactions": {
+          "description": "Raw public interaction records."
+        },
+        "edges": {
+          "description": "Generated relationship edges with weight and confidence."
+        },
+        "evidences": {
+          "description": "Evidence records explaining generated edges."
+        },
+        "node_scores": {
+          "description": "NetworkX centrality, PageRank, and community scores."
+        }
+      }
+    }
+  }
+}

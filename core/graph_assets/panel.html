@@ -1,0 +1,51 @@
+
+    <details id="osge-display-panel">
+      <summary>显示设置 / Display</summary>
+      <div class="osge-display-body">
+        <label><span>节点文字 / Node text</span><span class="osge-range-pair"><input id="osge-node-font-size" type="range" min="10" max="64" value="18"><input id="osge-node-font-size-number" type="number" min="10" max="64" value="18"></span></label>
+        <label><span>关系标签字号 / Edge label size</span><span class="osge-range-pair"><input id="osge-edge-label-size" type="range" min="8" max="48" value="11"><input id="osge-edge-label-size-number" type="number" min="8" max="48" value="11"></span></label>
+        <label><span>节点大小 / Node size</span><span class="osge-range-pair"><input id="osge-node-size-scale" type="range" min="60" max="400" value="100"><input id="osge-node-size-scale-number" type="number" min="60" max="400" value="100"></span></label>
+        <label><span>连线粗细 / Line width</span><span class="osge-range-pair"><input id="osge-line-width-scale" type="range" min="30" max="400" value="100"><input id="osge-line-width-scale-number" type="number" min="30" max="400" value="100"></span></label>
+        <label><span>中心-一级长度 / Center hop</span><span class="osge-range-pair"><input id="osge-center-spacing" type="range" min="120" max="2400" value="280"><input id="osge-center-spacing-number" type="number" min="120" max="2400" value="280"></span></label>
+        <label><span>同层/跨支长度 / Peer hop</span><span class="osge-range-pair"><input id="osge-peer-spacing" type="range" min="120" max="3000" value="460"><input id="osge-peer-spacing-number" type="number" min="120" max="3000" value="460"></span></label>
+        <label><span>外层连接长度 / Outer hop</span><span class="osge-range-pair"><input id="osge-outer-spacing" type="range" min="120" max="3600" value="620"><input id="osge-outer-spacing-number" type="number" min="120" max="3600" value="620"></span></label>
+        <label><span>最短边长 / Min edge</span><span class="osge-range-pair"><input id="osge-min-edge-length" type="range" min="80" max="1200" value="150"><input id="osge-min-edge-length-number" type="number" min="80" max="1200" value="150"></span></label>
+        <label><span>最长边长 / Max edge</span><span class="osge-range-pair"><input id="osge-max-edge-length" type="range" min="300" max="5000" value="2200"><input id="osge-max-edge-length-number" type="number" min="300" max="5000" value="2200"></span></label>
+        <label><span>叶节点防贴近 / Leaf gap</span><span class="osge-range-pair"><input id="osge-leaf-min-distance" type="range" min="80" max="1200" value="230"><input id="osge-leaf-min-distance-number" type="number" min="80" max="1200" value="230"></span></label>
+        <label><span>排斥力度 / Repulsion</span><span class="osge-range-pair"><input id="osge-repulsion" type="range" min="0" max="220000" step="1000" value="42000"><input id="osge-repulsion-number" type="number" min="0" max="220000" step="1000" value="42000"></span></label>
+        <label><span>组件收拢 / Component pull</span><span class="osge-range-pair"><input id="osge-component-gravity" type="range" min="0" max="1" step="0.01" value="0.16"><input id="osge-component-gravity-number" type="number" min="0" max="1" step="0.01" value="0.16"></span></label>
+        <label><span>连线权重影响 / Weight impact</span><span class="osge-range-pair"><input id="osge-line-weight-impact" type="range" min="0" max="500" value="100"><input id="osge-line-weight-impact-number" type="number" min="0" max="500" value="100"></span></label>
+        <label><span>权重距离影响 / Weight distance</span><span class="osge-range-pair"><input id="osge-weight-distance-impact" type="range" min="0" max="500" value="100"><input id="osge-weight-distance-impact-number" type="number" min="0" max="500" value="100"></span></label>
+        <label>隐藏弱关系线 / Hide weak edges <input id="osge-hide-low-weight-edges" type="checkbox" checked></label>
+        <label><span>关系权重阈值 / Edge weight threshold</span><input id="osge-edge-weight-threshold" type="number" min="0" step="0.01" value="0.1"></label>
+        <label>隐藏弱关联账户 / Hide leaf accounts <input id="osge-hide-leaf-accounts" type="checkbox"></label>
+        <label>隐藏低加权度节点 / Hide low-degree nodes <input id="osge-hide-low-weight-nodes" type="checkbox"></label>
+        <label><span>节点加权度阈值 / Weighted degree threshold</span><input id="osge-node-weight-threshold" type="number" min="0" step="0.1" value="1"></label>
+        <label>显示关系标签 / Edge labels <input id="osge-show-edge-labels" type="checkbox" checked></label>
+        <button type="button" onclick="osgeResetDisplaySettings()">恢复默认 / Reset display</button>
+        <p class="osge-hint">关系标签只支持字号和显示/隐藏；连线粗细调节的是图谱连接线，不会修改数据库关系。 / Edge labels support size and visibility; line width changes only the visual graph links.</p>
+      </div>
+    </details>
+    <div id="osge-search-panel">
+      <div class="osge-search-header">
+        <strong>搜索与采集 / Search</strong>
+        <button id="osge-search-collapse" type="button" onclick="osgeToggleSearchPanel()">收起</button>
+      </div>
+      <div id="osge-search-body">
+        <form onsubmit="osgeCrawlPlatformProfile(event)">
+          <input id="osge-crawl-account-input" type="search" autocomplete="off" placeholder="">
+          <button type="submit">采集 / Crawl</button>
+        </form>
+        <div id="osge-search-status"></div>
+        <form onsubmit="osgeSearchLocalAccounts(event)">
+          <input id="osge-local-search-input" type="search" autocomplete="off" placeholder="跨平台搜索账号、昵称或平台 ID / Cross-platform account search">
+          <button type="submit">库内搜索 / Search</button>
+        </form>
+        <div id="osge-local-search-results"></div>
+      </div>
+    </div>
+    <div id="osge-platform-panel" class="osge-platform-switch" aria-label="平台图谱切换"></div>
+    <aside id="osge-node-panel" class="osge-hidden" aria-live="polite">
+      <h2>节点详情 / Node details</h2>
+      <p class="osge-muted">单击节点查看信息；双击打开主页。 / Single-click to inspect; double-click opens the profile.</p>
+    </aside>

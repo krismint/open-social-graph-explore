@@ -1,0 +1,124 @@
+OSGE Non-Commercial Research License 1.0
+OSGE 非商业研究许可证 1.0
+
+Copyright (c) 2026 Open Social Graph Explorer contributors
+
+This license applies to original OSGE source code, documentation, and assets,
+unless a file, dependency, copied asset, or third-party notice states otherwise.
+Third-party components remain under their own licenses and terms.
+
+本许可证适用于 OSGE 原创源码、文档和资源文件，但文件自身、依赖项、复制资产或第三方声明另有说明的除外。
+第三方组件仍适用其各自许可证和使用条款。
+
+1. Permission
+
+Subject to the conditions below, the copyright holders grant you a free,
+worldwide, non-exclusive license to use, copy, modify, merge, publish, and
+distribute the Software or modified versions of the Software for
+non-commercial learning, research, auditing, and personal experimentation.
+
+在遵守以下条件的前提下，版权所有者授予你免费、全球范围、非独占的许可，允许你为非商业学习、研究、审计和个人实验目的使用、复制、修改、合并、发布和分发本软件或其修改版本。
+
+2. Non-Commercial Restriction
+
+You may not use the Software for commercial purposes without prior written
+permission from the copyright holders.
+
+Commercial purposes include, but are not limited to:
+
+- selling, licensing, sublicensing, renting, or monetizing the Software;
+- integrating the Software into a paid product, hosted service, consulting
+  service, business workflow, or commercial data pipeline;
+- using the Software to provide crawling, monitoring, profiling, lead
+  generation, risk scoring, advertising, marketing, sales intelligence, or
+  competitive intelligence services;
+- selling, brokering, renting, or otherwise monetizing data, graphs,
+  profiles, reports, or derived datasets produced with the Software;
+- using the Software for internal business operations where the use provides
+  commercial advantage.
+
+未经版权所有者事先书面许可，不得将本软件用于任何商业目的。
+
+商业目的包括但不限于：
+
+- 销售、许可、再许可、出租本软件，或以本软件获利；
+- 将本软件集成到付费产品、托管服务、咨询服务、商业工作流或商业数据管线；
+- 使用本软件提供采集、监控、画像、获客、风险评分、广告、营销、销售情报或竞争情报服务；
+- 销售、交易、出租或以其他方式变现由本软件生成的数据、图谱、画像、报告或衍生数据集；
+- 在能够产生商业利益的内部业务场景中使用本软件。
+
+3. Research and Safety Boundaries
+
+You may use the Software only with public, authorized, or user-owned data.
+You may not use the Software to:
+
+- bypass login walls, CAPTCHAs, rate limits, permission checks, anti-abuse
+  systems, or other access controls;
+- collect private messages, private accounts, non-public comments, restricted
+  communities, or other unauthorized data;
+- perform large-scale crawling that disrupts a platform or violates platform
+  rules;
+- harass, track, surveil, expose, deanonymize, or target real people;
+- build privacy databases, social engineering databases, or identity exposure
+  systems;
+- hide the operator's identity, steal sessions, or share cookies, tokens,
+  browser profiles, raw platform responses, or local databases.
+
+本软件只能用于公开可访问、已授权或用户自有的数据。不得将本软件用于：
+
+- 绕过登录墙、验证码、限流、权限校验、反滥用系统或其他访问控制；
+- 采集私信、私密账号、非公开评论、受限社群或其他未授权数据；
+- 进行影响平台运行或违反平台规则的大规模爬取；
+- 骚扰、跟踪、监控、曝光、去匿名化或定向针对真实个人；
+- 构建隐私数据库、社工库或身份曝光系统；
+- 隐藏操作者身份，盗用 session，或共享 cookies、tokens、浏览器 profile、原始平台响应、本地数据库。
+
+4. Notice Requirements
+
+Any copy or substantial portion of the Software must include:
+
+- this license;
+- the copyright notice above;
+- all existing file headers and attribution notices;
+- `THIRD_PARTY_NOTICES.md` or an equivalent notice file when third-party
+  components are included.
+
+Modified versions must make reasonable effort to identify that changes were
+made. You may not remove third-party license restrictions or imply that OSGE
+grants rights to third-party code, assets, services, platforms, or data.
+
+任何本软件副本或实质性部分必须包含：
+
+- 本许可证；
+- 上述版权声明；
+- 现有文件头和署名声明；
+- 在包含第三方组件时，同时包含 `THIRD_PARTY_NOTICES.md` 或等效声明文件。
+
+修改版本应尽合理努力标明已作修改。不得移除第三方许可证限制，也不得暗示 OSGE 授予第三方代码、资源、服务、平台或数据的使用权。
+
+5. No Trademark or Platform Rights
+
+This license does not grant rights to any project name, logo, third-party
+trademark, platform API, platform service, account, dataset, or content.
+
+本许可证不授予任何项目名称、标志、第三方商标、平台 API、平台服务、账号、数据集或内容的权利。
+
+6. Termination
+
+Your rights under this license terminate automatically if you violate its
+terms. After termination, you must stop using and distributing the Software,
+unless the copyright holders provide written permission.
+
+如你违反本许可证条款，本许可证授予你的权利自动终止。终止后，除非获得版权所有者书面许可，你必须停止使用和分发本软件。
+
+7. Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES,
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+本软件按“现状”提供，不提供任何形式的明示或暗示保证，包括但不限于适销性、特定用途适用性、权利归属和非侵权保证。在任何情况下，版权所有者或贡献者均不对因本软件或本软件使用行为产生的任何索赔、损害或其他责任负责，无论该责任基于合同、侵权或其他法律理论。
